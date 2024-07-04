@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en"> <!--begin::Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title> Taller JosGuicar </title><!--begin::Primary Meta Tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content=" Taller JosGuicar ">
+    <meta name="author" content="ColorlibHQ">
+    <meta name="description"
+        content="AdminLTE is a Free Bootstrap 5 Admin Dashboard, 30 example pages using Vanilla JS.">
+    <meta name="keywords"
+        content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, colorlibhq, colorlibhq dashboard, colorlibhq admin dashboard">
+    <!--end::Primary Meta Tags--><!--begin::Fonts-->
+    <link rel="stylesheet" href="../css/index.css" integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q="
+        crossorigin="anonymous"><!--end::Fonts--><!--begin::Third Party Plugin(OverlayScrollbars)-->
+    <link rel="stylesheet" href="../css/overlayscrollbars.min.css"
+        integrity="sha256-dSokZseQNT08wYEWiz5iLI8QPlKxG+TswNRD8k35cpg=" crossorigin="anonymous">
+    <!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Third Party Plugin(Bootstrap Icons)-->
+    <link rel="stylesheet" href="../css/bootstrap-icons.min.css"
+        integrity="sha256-Qsx5lrStHZyR9REqhUF8iQt73X06c8LGIUPzpOhwRrI=" crossorigin="anonymous">
+    <!--end::Third Party Plugin(Bootstrap Icons)--><!--begin::Required Plugin(AdminLTE)-->
+    <link rel="stylesheet" href="../css/adminlte.css"><!--end::Required Plugin(AdminLTE)--><!-- apexcharts -->
+    <link rel="stylesheet" href="../css/apexcharts.css" integrity="sha256-4MX+61mt9NVvvuPjUWdUdyfZfxSB1/Rf9WtqRHgG5S0="
+        crossorigin="anonymous"><!-- jsvectormap -->
+    <link rel="stylesheet" href="../css/jsvectormap.min.css"
+        integrity="sha256-+uGLJmmTKOqBr+2E6KDYs/NRsHxSkONXFHUL0fy2O/4=" crossorigin="anonymous">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style_form.css" rel="stylesheet">
+    <!-- FONT -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&amp;display=swap"
+        rel="stylesheet">
+</head> <!--end::Head--> <!--begin::Body-->
+
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+    <!--begin::App Wrapper-->
+    <div class="app-wrapper">
+        <!--begin::Sidebar-->
+        <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark"> <!--begin::Sidebar Brand-->
+            <div class="sidebar-brand"> <!--begin::Brand Link--> <a href="./index.html" class="brand-link">
+                    <!--begin::Brand Image-->
+                    <!--end::Brand Image--> <!--begin::Brand Text--> <span class="brand-text fw-light">Taller
+                        JosGuicar</span> <!--end::Brand Text--> </a>
+                <!--end::Brand Link-->
+            </div> <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
+            <div class="sidebar-wrapper">
+                <nav class="mt-2">
+                    <nav class="mt-2"> <!--begin::Sidebar Menu-->
+                        <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu"
+                            data-accordion="false">
+                            <li class="nav-item menu-open"> <a href="../pages/vehiculos.html" class="nav-link active"> <i
+                                        class="nav-icon bi bi-speedometer"></i>
+                                    <p>
+                                        Vehiculos
+                                    </p>
+                                </a>
+
+
+                        </ul> <!--end::Sidebar Menu-->
+                    </nav>
+                    <nav class="mt-2"> <!--begin::Sidebar Menu-->
+                        <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu"
+                            data-accordion="false">
+                            <li class="nav-item menu-open"> <a href="../pages/ordenes.html" class="nav-link active"> <i
+                                        class="nav-icon bi bi-speedometer"></i>
+                                    <p>
+                                        Ordenes
+                                    </p>
+                                </a>
+
+
+                        </ul> <!--end::Sidebar Menu-->
+                    </nav>
+                    <nav class="mt-2"> <!--begin::Sidebar Menu-->
+                        <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu"
+                            data-accordion="false">
+                            <li class="nav-item menu-open"> <a href="../pages/formulario_recepcion.html" class="nav-link active"> <i
+                                        class="nav-icon bi bi-speedometer"></i>
+                                    <p>
+                                        Recepción
+                                    </p>
+                                </a>
+
+
+                        </ul> <!--end::Sidebar Menu-->
+                    </nav>
+                    <nav class="mt-2"> <!--begin::Sidebar Menu-->
+                        <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu"
+                            data-accordion="false">
+                            <li class="nav-item menu-open"> <a href="../pages/clientes.html" class="nav-link active"> <i
+                                        class="nav-icon bi bi-speedometer"></i>
+                                    <p>
+                                        Clientes
+                                    </p>
+                                </a>
+
+
+                        </ul> <!--end::Sidebar Menu-->
+                    </nav>
+            </div> <!--end::Sidebar Wrapper-->
+        </aside> <!--end::Sidebar--> <!--begin::App Main-->
+        <div class="container d-flex align-items-center min-vh-100">
+            <div class="row g-0 justify-content-center">
+
+                <div class="col-lg-4 offset-lg-1 mx-0 px-0">
+                    <div id="title-container">
+                        <img class="covid-image" src="../assets/img/car-svgrepo-com.svg" height="150">
+                        <h2>Recepción de Vehículo</h2>
+                   
+                    </div>
+                </div>
+
+                <!-- FORMS -->
+                
+                <div class="col-lg-7 mx-0 px-0">
+                    <div class="progress">
+                        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50"
+                            class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+                            style="width: 0%">
+                        </div>
+                    </div>
+                    <div id="qbox-container">
+                        <form class="needs-validation" id="form-wrapper" method="post" name="form-wrapper" novalidate="">
+                            <div id="steps-container">
+                                <div class="step">
+                                    <h4>Por favor, indícanos si este es
+                                        un vehículo nuevo para una revisión
+                                        inicial o si ya ha recibido reparaciones o
+                                        mantenimiento en nuestro taller
+                                        anteriormente.</h4>
+                                    <div class="form-check ps-0 q-box">
+                                        <div class="q-box__question">
+                                            <input class="form-check-input question__input" id="q_1_yes" name="q_1" type="radio"
+                                                value="Yes">
+                                            <label class="form-check-label question__label" for="q_1_yes">Vehiculo
+                                                Nuevo</label>
+                                        </div>
+                                        <div class="q-box__question">
+                                            <input checked class="form-check-input question__input" id="q_1_no" name="q_1" type="radio"
+                                                value="No">
+                                            <label class="form-check-label question__label" for="q_1_no">Vehiculo con
+                                                historial</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <h4>Informacion del cliente</h4>
+                                    <div class="form-check ps-0 q-box">
+                                        <div class="row">
+                                            <div class="col col-md-2">
+                                                <img src="../assets/img/user_rename.png" alt="" height="60">
+                                            </div>
+                                            <div class="col col-md-3">
+                                                <label for="nac" class="form-label">Nacionalidad</label>
+                                                <div class="form-check">
+                                                    <input id="credit" name="nac" type="radio" class="form-check-input" checked
+                                                        required>
+                                                    <label class="form-check-label" for="credit">V</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input id="debit" name="nac" type="radio" class="form-check-input" required>
+                                                    <label class="form-check-label" for="debit">E</label>
+                                                </div>
+                                            </div>
+                                            <div class="col col-md-5">
+                                                <label for="nombre" class="form-label">Numero de
+                                                    Documento</label>
+                                                <input type="nombre" class="form-control" id="nombre" value="" placeholder="12688383"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    Por favor introduzca un
+                                                    nombre
+                                                    valido,
+                                                    no coloque caracteres
+                                                    especiales
+                                                </div>
+                                            </div>
+                                            <div class="col col-md-2">
+                                                <label for="sexo" class="form-label">Sexo</label>
+                                                <div class="form-check">
+                                                    <input id="credit" name="sexo" type="radio" class="form-check-input" checked
+                                                        required>
+                                                    <label class="form-check-label" for="credit">Mujer</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input id="debit" name="sexo" type="radio" class="form-check-input" required>
+                                                    <label class="form-check-label" for="debit">Hombre</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col my-4">
+                                                <label for="nombre" class="form-label">Nombre</label>
+                                                <input type="nombre" class="form-control" id="nombre" value="" placeholder="Jose"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    Por favor introduzca un
+                                                    nombre
+                                                    valido,
+                                                    no coloque caracteres
+                                                    especiales
+                                                </div>
+                                            </div>
+                                            <div class="col my-4">
+                                                <label for="apellido" class="form-label">Apellido</label>
+                                                <input type="apellido" class="form-control" id="apellido" value="" placeholder="Perez"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    Por favor introduzca un
+                                                    nombre
+                                                    valido,
+                                                    no coloque caracteres
+                                                    especiales
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col my-4 col-md-6">
+                                                <label for="email" class="form-label">Correo
+                                                    electronico</label>
+                                                <input type="apellido" class="form-control" id="email" value=""
+                                                    placeholder="username@domain.com" required>
+                                                <div class="invalid-feedback">
+                                                    Please enter a valid email
+                                                    address
+                                                    for
+                                                    shipping
+                                                    updates.
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <div class="col my-2 col-md-2">
+                                                    <img src="../assets/img/placeholder_102071.png" alt="" height="30">
+                                                </div>
+                                                <br>
+                                                <div col my-1 col-md-6>
+                                                    <label for="direccion" class="form-label">Direccion</label>
+                                                    <input type="text" class="form-control" id="direccion" placeholder="1234 Main St"
+                                                        required>
+                                                    <div class="invalid-feedback">
+                                                        Por favor seleccione una
+                                                        Direccion.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col my-4 col-md-2">
+                                                <img src="../assets/img/call-13-512.png" alt="" height="30">
+                                            </div>
+                                            <div class="col my-4 col-md-4">
+                                                <label for="numero_hab" class="form-label">Habitacion</label>
+                                                <input type="text" class="form-control" id="numero_hab" placeholder="+58 212 123 4567"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    Por favor incluya un numero
+                                                    de
+                                                    celular valido.
+                                                </div>
+                                                <br>
+                                                <label for="telefono1" class="form-label">Celular
+                                                    1</label>
+                                                <input type="text" class="form-control" id="telefono1" placeholder="+58 412 123 4567"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    Por favor incluya un numero
+                                                    de
+                                                    celular valido.
+                                                </div>
+                                                <br>
+                                                <label for="telefono2" class="form-label">Celular
+                                                    2</label>
+                                                <input type="text" class="form-control" id="telefono2" placeholder="+58 412 123 4567"
+                                                    required>
+                                                <div class="invalid-feedback">
+                                                    Por favor incluya un numero
+                                                    de
+                                                    celular valido.
+                                                </div>
+                
+                                            </div>
+                
+                
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 themed-grid-col my-2">
+                                                <label for="estado" class="form-label">Estado</label>
+                                                <select class="form-select" id="country" required>
+                                                    <option value="">Seleccione
+                                                        ...
+                                                    </option>
+                                                    <option>Miranda</option>
+                                                    <option>Distrito Capital
+                                                    </option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Por favor seleccione un
+                                                    estado.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 themed-grid-col my-2">
+                                                <label for="municipio" class="form-label">Municipio</label>
+                                                <select class="form-select" id="state" required>
+                                                    <option value="">Seleccione
+                                                        ...
+                                                    </option>
+                                                    <option>Los Salias</option>
+                                                    <option>Guaicaipuro</option>
+                                                    <option>Carrizal</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Por favor seleccione un
+                                                    municipio.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 themed-grid-col my-2">
+                                                <label for="ciudad" class="form-label">Ciudad</label>
+                                                <select class="form-select" id="ciudad" required>
+                                                    <option value="">Seleccione
+                                                        ...
+                                                    </option>
+                                                    <option>San Antonio de los
+                                                        Altos
+                                                    </option>
+                                                    <option>Los Teques</option>
+                                                    <option>Carrizal</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Por favor seleccione una
+                                                    ciudad.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <h4>Informacion del Vehículo</h4>
+                                    <div class="form-check ps-0 q-box">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <img src="../assets/img/car-svgrepo-com.svg" alt="" height="80">
+                                            </div>
+                                            <div class="col">
+                                                <label for="combustible" class="form-label">Combustible</label>
+                                                <select class="form-select" id="combustible" required>
+                                                    <option value="">Seleccione
+                                                        ...
+                                                    </option>
+                                                    <option>Gasolina</option>
+                                                    <option>Diesel</option>
+                                                    <option>Electrico</option>
+                                                    <option>Hibrido</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Por favor seleccione una
+                                                    marca.
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <label for="marca" class="form-label">Marca</label>
+                                                <select class="form-select" id="marca" required>
+                                                    <option value="">Seleccione
+                                                        ...
+                                                    </option>
+                                                    <option>Toyota</option>
+                                                    <option>Volkswagen</option>
+                                                    <option>Renault</option>
+                                                    <option>Ford</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Por favor seleccione una
+                                                    ciudad.
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <label for="modelo" class="form-label">Modelo</label>
+                                                <select class="form-select" id="modelo" required>
+                                                    <option value="">Seleccione
+                                                        ...
+                                                    </option>
+                                                    <option>Corolla</option>
+                                                    <option>Camry</option>
+                                                    <option>Yaris</option>
+                                                    <option>Tacoma</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Por favor seleccione un
+                                                    modelo.
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 my-3">
+                                                    <label for="size" class="form-label">Tipo</label>
+                                                    <select class="form-select" id="size" required>
+                                                        <option value="">Seleccione
+                                                            ...
+                                                        </option>
+                                                        <option>Sedán</option>
+                                                        <option>Hatchback</option>
+                                                        <option>SUV</option>
+                                                        <option>Coupé</option>
+                                                        <option>Station Wagon
+                                                        </option>
+                                                        <option>Minivan</option>
+                                                        <option>Pick-up</option>
+                                                    </select>
+                                                    <div class="invalid-feedback">
+                                                        Por favor seleccione un
+                                                        modelo.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 my-3">
+                                                    <label for="placa" class="form-label">Placa
+                                                    </label>
+                                                    <input type="placa" class="form-control" id="placa" value="" placeholder="VCNOOJ"
+                                                        required>
+                                                </div>
+                                                <div class="col-md-3 my-3">
+                                                    <label for="year" class="form-label">Año
+                                                    </label>
+                                                    <input type="year" class="date-own form-control" id="year" value=""
+                                                        placeholder="2024" required>
+                                                </div>
+                                                <div class="col-md-3 my-3">
+                                                    <label for="colorauto" class="form-label">Color
+                                                    </label>
+                                                    <input type="colorauto" class="date-own form-control" id="colorauto" value=""
+                                                        placeholder="Gris Oscuro" required>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <label for="kilometraje" class="form-label">Kilometraje
+                                                        del vehiculo
+                                                    </label>
+                                                    <input type="kilometraje" class="date-own form-control" id="kilometraje" value=""
+                                                        placeholder="127.652" required>
+                                                </div>
+                                                <div class="col">
+                                                    <label for="vin" class="form-label">Número de VIN
+                                                    </label>
+                                                    <input type="vin" class="date-own form-control" id="vin" value=""
+                                                        placeholder="1HGCM82633A123456" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <h4>Detalles de Vehiculo</h4>
+                                    <div class="row">
+                                        <div class="row">
+                                            <img src="../assets/img/camara01.jpg" alt="">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 themed-grid-col">
+                                                <h5>Carroceria</h5>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Golpe
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Suelto
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Rayas
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Desconchado
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Vidrio Roto
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Falta Molduras
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Falta faro
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Falta Accesario
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Espejo Roto
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Falta centro de Copas
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Otro
+                                                    </label>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-md-6 themed-grid-col">
+                                                <h5>Accesorios</h5>
+                                                <label for="">Si/No</label>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Alfombra
+                                                        Delantera</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Alfombra
+                                                        Trasera</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Radio</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Radio
+                                                        Roproductor</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Antena
+                                                        Electrica</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Encendedor
+                                                        Cigarrillos</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Triangulo de
+                                                        Seguridad</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Gato</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Caucho
+                                                        de Repuestos</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Otro</label>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-md-6 themed-grid-col">
+                                                <br>
+                                                <h5>Sistema Electrico</h5>
+                                                <label for="">Si/No</label>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Frenos
+                                                        Delantero</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Tablero</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Luz de
+                                                        cruce</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Stop</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Vidrio
+                                                        Electrico</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Aire
+                                                        Acondicionado</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Otro</label>
+                                                </div>
+                
+                
+                
+                                            </div>
+                
+                                            <div class="col-md-6 themed-grid-col">
+                                                <div class="col">
+                                                    <br>
+                                                    <label for="vin" class="form-label">Observaciones
+                                                    </label>
+                                                    <input type="vin" class="date-own form-control" id="observaciones" value=""
+                                                        placeholder="Observaciones" required>
+                                                </div>
+                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <h4>Servicios del Taller (1/2)</h4>
+                                    <div class="row">
+                                        <div class="form-check ps-0 q-box">
+                                            <h5>Categoría: Mantenimiento Preventivo</h5>
+                                            <br>
+                                            <label>Cambio de Aceite y Filtro</label>
+                                            <br>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                                    value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Sintetico</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                                    value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">Semisentetico</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                                    value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">Mineral</label>
+                                            </div>
+                                        </div>
+                                        <label for="marca" class="form-label">Marca del Filtro</label>
+                                        <select class="form-select" id="marca" required>
+                                            <option value="">Seleccione
+                                                ...
+                                            </option>
+                                            <option>Bosch</option>
+                                            <option>MANN-FILTER</option>
+                                            <option>Fram</option>
+                                            <option>K&N</option>
+                                            <option>ACDelco</option>
+                                            <option>Purolator</option>
+                                            <option>WIX</option>
+                                            <option>Mobil 1</option>
+                                            <option>Hastings</option>
+                                            <option>Mahle</option>
+                                        </select>
+                                    </div>
+                                    <br>
+                                    <label>Revisión y Reemplazo de Filtros</label>
+                                    <div class="row">
+                                        <div class="col">
+                                            Filtro de Aire
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio10" value="option1">
+                                                <label class="form-check-label" for="inlineRadio10">Revisar</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio20" value="option2">
+                                                <label class="form-check-label" for="inlineRadio20">Reemplazar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            Filtro de Combustible
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio10" value="option1">
+                                                <label class="form-check-label" for="inlineRadio10">Revisar</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio20" value="option2">
+                                                <label class="form-check-label" for="inlineRadio20">Reemplazar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            Filtro de Cabina
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio10" value="option1">
+                                                <label class="form-check-label" for="inlineRadio10">Revisar</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio20" value="option2">
+                                                <label class="form-check-label" for="inlineRadio20">Reemplazar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <label>Revisión de Fluidos</label>
+                                    <div class="row">
+                                        <div class="col">
+                                            Líquido de Frenos
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio10" value="option1">
+                                                <label class="form-check-label" for="inlineRadio10">Revisar</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio20" value="option2">
+                                                <label class="form-check-label" for="inlineRadio20">Reemplazar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            Líquido Refrigerante
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio10" value="option1">
+                                                <label class="form-check-label" for="inlineRadio10">Revisar</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio20" value="option2">
+                                                <label class="form-check-label" for="inlineRadio20">Reemplazar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            Líquido de Dirección Asistida
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio10" value="option1">
+                                                <label class="form-check-label" for="inlineRadio10">Revisar</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="inlineRadio20" value="option2">
+                                                <label class="form-check-label" for="inlineRadio20">Reemplazar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <h4>Servicios del Taller (2/2)</h4>
+                                    <div class="mt-1">
+                                        <div class="form-check ps-0 q-box">
+                                            <h5>Categoría: Mantenimiento Correctivo</h5>
+                                            <br>
+                                            <label>Sistema de Frenos</label>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    Pastillas de Frenos
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio10" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio10">Revisar</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio20" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio20">Reemplazar</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    Discos de Frenos
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio10" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio10">Revisar</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio20" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio20">Reemplazar</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-check ps-0 q-box">
+                                            <br>
+                                            <label>Sistema de Suspensión</label>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    Amortiguadores
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio10" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio10">Revisar</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio20" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio20">Reemplazar</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    Muelles
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio10" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio10">Revisar</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio20" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio20">Reemplazar</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-check ps-0 q-box">
+                                            <br>
+                                            <label>Sistema de Escape</label>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    Silenciador
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio10" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio10">Revisar</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio20" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio20">Reemplazar</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    Tubo de Escape
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio10" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio10">Revisar</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio20" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio20">Reemplazar</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-check ps-0 q-box">
+                                            <br>
+                                            <br>
+                                            <h5>Categoría: Diagnóstico y Reparación de Motor</h5>
+                                            <br>
+                                            <label>Diagnóstico General del Motor</label>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    Lectura de Códigos de Error
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio10" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio10">Revisar</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio20" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio20">Reemplazar</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    Prueba de Compresión
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio10" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio10">Revisar</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio20" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio20">Reemplazar</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <label>Reparación de Motor</label>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    Ajuste de Válvulas
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio10" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio10">Revisar</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio20" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio20">Reemplazar</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    Cambio de Bujías
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio10" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio10">Revisar</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                            id="inlineRadio20" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio20">Reemplazar</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                
+                                    </div>
+                                    <div class="mt-2">
+                
+                                    </div>
+                                    <div class="mt-2">
+                
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-lg-2 col-md-2 col-3">
+                
+                                        </div>
+                                        <div class="col-lg-8">
+                
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div class="mt-1">
+                                        <div class="closing-text">
+                                            <h4>¡Eso es todo!!!</h4>
+                                            <p>Hemos recopilado todos los datos necesarios del formulario.
+                                                Tu información será procesada en nuestro sistema y pronto te informaremos sobre el
+                                                estado de tu vehículo y los
+                                                siguientes pasos en el proceso de revisión o reparación..</p>
+                                            <p>Haz clic en el botón de enviar para continuar.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="success">
+                                    <div class="mt-5">
+                                        <h4>¡Éxito! Ya tenemos una orden (#34564) de recepción para tu vehículo!</h4>
+                                        <p>Iniciaremos la revisión del mismo lo antes posible. Mientras tanto, te recomendamos que
+                                            mantengas tu vehículo en buen
+                                            estado, verificando regularmente los niveles de aceite y otros fluidos, y siguiendo las
+                                            recomendaciones de mantenimiento
+                                            para garantizar su óptimo funcionamiento..</p>
+                                        <a class="back-link" href="../pages/index.html">Volver al inicio ➜</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="q-box__buttons">
+                                <button id="prev-btn" type="button">Previous</button>
+                                <button id="next-btn" type="button">Next</button>
+                                <button id="submit-btn" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                
+                </div>
+                </div>
+                </div>
+                </div><!-- PRELOADER -->
+                <div id="preloader-wrapper">
+                    <div id="preloader"></div>
+                    <div class="preloader-section section-left"></div>
+                    <div class="preloader-section section-right"></div>
+                </div>
+                <script src="../js/script.js">
+                </script>
+                <!-- Static App Form Collection Script -->
+                <script src="https://static.app/js/static-forms.js" type="text/javascript"></script>
+                <!-- Static App Form Collection Script -->
+                <script src="https://static.app/js/static-forms.js" type="text/javascript"></script>
+                <!-- Static App Form Collection Script -->
+                <script src="" type="text/javascript"></script>
+                <!-- Static App Form Collection Script -->
+                <script src="" type="text/javascript"></script>
+
+
+            </div>
+
+
+        </div>
+        
+        
+        
+
+        <footer class="app-footer">
+            <!--begin::Copyright-->
+            <strong>
+                Copyright &copy; 2024&nbsp;
+            </strong>
+            A & G System Solutions.
+            <!--end::Copyright-->
+        </footer> <!--end::Footer-->
+
+
+    </div> <!--end::App Wrapper-->
+
+</body><!--end::Body-->
+
+</html>
