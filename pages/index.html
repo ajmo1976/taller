@@ -43,7 +43,7 @@
                     <!--begin::Menu Footer-->
                     <li class="user-footer">
                         <a href="#" class="btn btn-default btn-flat">Profile</a>
-                        <a href="#" class="btn btn-default btn-flat float-end">Sign out</a>
+                        <a href="../pages/logout.html" class="btn btn-default btn-flat float-end">Sign out</a>
                     </li>
                     <!--end::Menu Footer-->
                 </ul>
@@ -76,8 +76,8 @@
                 <nav class="mt-2"> <!--begin::Sidebar Menu-->
                     <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu"
                         data-accordion="false">
-                        <li class="nav-item menu-open"> <a href="../pages/ordenes.html" class="nav-link active"> <i
-                                    class="nav-icon bi bi-speedometer"></i>
+                        <li class="nav-item menu-open"> <a href="../pages/ordenes.html" class="nav-link active">
+                                <i class="nav-icon bi bi-speedometer"></i>
                                 <p>
                                     Ordenes
                                 </p>
@@ -89,8 +89,8 @@
                 <nav class="mt-2"> <!--begin::Sidebar Menu-->
                     <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu"
                         data-accordion="false">
-                        <li class="nav-item menu-open"> <a href="../pages/formulario_recepcion.html" class="nav-link active"> <i
-                                    class="nav-icon bi bi-speedometer"></i>
+                        <li class="nav-item menu-open"> <a href="../pages/formulario_recepcion.html"
+                                class="nav-link active"> <i class="nav-icon bi bi-speedometer"></i>
                                 <p>
                                     Recepcion
                                 </p>
@@ -169,7 +169,7 @@
                                     <p>Clientes</p>
                                 </div>
                                 <img class="small-box-icon" src="../assets/img/user.svg" alt="">
-                                <a href="#"
+                                <a href="../pages/clientes.html"
                                     class="small-box-footer link-dark link-underline-opacity-0 link-underline-opacity-50-hover">
                                     More info
                                 </a>
@@ -181,10 +181,10 @@
                                     <h3>65</h3>
                                     <p>Recepcion</p>
                                 </div>
-                                <img class="small-box-icon" src="../pages/formulario_recepcion.html" alt="">
-                                <a href="#"
+                                <img class="small-box-icon" src="../assets/img/paper-clip-svgrepo-com.svg"" alt="">
+                                <a href=" ../pages/formulario_recepcion.html"
                                     class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                                    More info
+                                More info
                                 </a>
                             </div> <!--end::Small Box Widget 4-->
                         </div> <!--end::Col-->
@@ -211,47 +211,47 @@
                                 </div>
                             </div> <!--end::Row-->
                             <div class="col-lg-6 col-6"> <!--begin::Small Box Widget 4-->
-                                
 
-                                    <head>
-                                        <script type="text/javascript">
-                                            window.onload = function () {
-                                                var chart = new CanvasJS.Chart("chartContainer",
-                                                    {
-                                                        title: {
-                                                            text: "Marca de Vehiculos"
-                                                        },
-                                                        legend: {
-                                                            maxWidth: 350,
-                                                            itemWidth: 120
-                                                        },
-                                                        data: [
-                                                            {
-                                                                type: "pie",
-                                                                showInLegend: true,
-                                                                legendText: "{indexLabel}",
-                                                                dataPoints: [
-                                                                    { y: 4181563, indexLabel: "Renault" },
-                                                                    { y: 2175498, indexLabel: "Peugeot" },
-                                                                    { y: 3125844, indexLabel: "Toyota" },
-                                                                    { y: 1176121, indexLabel: "Ford" },
-                                                                    { y: 1727161, indexLabel: "Fiat" },
-                                                                    { y: 4303364, indexLabel: "Volkswagen" },
-                                                                    { y: 1717786, indexLabel: "Chevrolet" }
-                                                                ]
-                                                            }
-                                                        ]
-                                                    });
-                                                chart.render();
-                                            }
-                                        </script>
-                                        <script type="text/javascript"
-                                            src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
-                                    </head>
 
-                                    <body>
-                                        <div id="chartContainer" style="height: 400px; width: 105%;"></div>    
-                                    </body>
+                                <head>
+                                    <script type="text/javascript">
+                                        window.onload = function () {
+                                            var chart = new CanvasJS.Chart("chartContainer",
+                                                {
+                                                    title: {
+                                                        text: "Marca de Vehiculos"
+                                                    },
+                                                    legend: {
+                                                        maxWidth: 350,
+                                                        itemWidth: 120
+                                                    },
+                                                    data: [
+                                                        {
+                                                            type: "pie",
+                                                            showInLegend: true,
+                                                            legendText: "{indexLabel}",
+                                                            dataPoints: [
+                                                                { y: 4181563, indexLabel: "Renault" },
+                                                                { y: 2175498, indexLabel: "Peugeot" },
+                                                                { y: 3125844, indexLabel: "Toyota" },
+                                                                { y: 1176121, indexLabel: "Ford" },
+                                                                { y: 1727161, indexLabel: "Fiat" },
+                                                                { y: 4303364, indexLabel: "Volkswagen" },
+                                                                { y: 1717786, indexLabel: "Chevrolet" }
+                                                            ]
+                                                        }
+                                                    ]
+                                                });
+                                            chart.render();
+                                        }
+                                    </script>
+                                    <script type="text/javascript"
+                                        src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+                                </head>
+
+                                <body>
+                                    <div id="chartContainer" style="height: 400px; width: 105%;"></div>
+                                </body>
 
                             </div>
                             <!-- /.Start col -->
